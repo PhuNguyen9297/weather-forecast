@@ -4,10 +4,10 @@ export default class Form extends Component {
   render() {
       const getWeather = this.props.getWeather;
     return (
-        <form onSubmit={getWeather}>
-            <input type="text" id="city"></input>
-            <input type="text" id="country"></input>
-            <button className="btn">Search</button>
+        <form className="form-inline" onSubmit={getWeather}>
+            <input className="form-control" type="text" id="city" placeholder="City"></input>
+            <input className="form-control" type="text" id="country" placeholder="Country"></input>
+            <button className="btn btn-success" type="submit">Search</button>
         </form>
     )
   }
